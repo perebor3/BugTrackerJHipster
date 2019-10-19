@@ -19,10 +19,10 @@ env:
     - NG_CLI_ANALYTICS="false"
 before_install:
   -
-    if [[ $JHI_JDK = '8' ]]; then
-      echo '*** Using OpenJDK 8'
+    if [[ $JHI_JDK = "8" ]]; then
+      echo "*** Using OpenJDK 8"
     else
-      echo '*** Using OpenJDK 11 by default'
+      echo "*** Using OpenJDK 11 by default"
       sudo add-apt-repository ppa:openjdk-r/ppa
       sudo apt-get update
       sudo apt-get install -y openjdk-11-jdk
