@@ -19,6 +19,7 @@ env:
     - NG_CLI_ANALYTICS="false"
     - JHI_JDK="11"
 before_install:
+  - echo "JHI_JDK"
   -
     if [[ $JHI_JDK = "8" ]]; then
       echo "*** Using OpenJDK 8"
